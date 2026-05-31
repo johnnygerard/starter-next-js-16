@@ -1,6 +1,18 @@
 import "@/app/globals.css";
+import { clsx } from "clsx";
 import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import type { FC, ReactNode } from "react";
+
+const sansFont = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const monoFont = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +24,7 @@ type Props = {
 };
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html lang="en-US">
+  <html className={clsx(sansFont.variable, monoFont.variable)} lang="en-US">
     <body>{children}</body>
   </html>
 );
