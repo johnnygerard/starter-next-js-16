@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 16 Starter
 
-## Getting Started
+![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://starter-next-js-16.vercel.app/)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This starter repository facilitates the creation of new Next.js projects using the configuration described below. Note that this Next.js starter is configured for use with a [static export](https://nextjs.org/docs/app/guides/static-exports). To restore the default Next.js server behavior, remove `output: "export"` from `next.config.ts` and run these commands:
+
+```sh
+npm uninstall serve
+npm pkg set scripts.start='next start'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To learn how to use a GitHub template repository, check out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-## Learn More
+### Frontend
 
-To learn more about Next.js, take a look at the following resources:
+- **UI library**: [React 19](https://react.dev/)
+- **Framework**: [Next.js 16](https://nextjs.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **CDN**: [Vercel](https://vercel.com/docs/cdn)
 
-## Deploy on Vercel
+## Dev Environment & Tools
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **System**: [Ubuntu](https://ubuntu.com/desktop)
+- **Editor**: [VS Code](https://code.visualstudio.com/)
+- **Formatter**: [Prettier](https://prettier.io/)
+- **Linter**: [ESLint](https://eslint.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Copyright
+
+© 2026 Johnny Gérard
