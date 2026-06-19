@@ -44,7 +44,14 @@ type Props = {
 };
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html className={clsx(sansFont.variable, monoFont.variable)} lang="en-US">
+  <html
+    className={clsx(
+      "motion-safe:scroll-smooth",
+      sansFont.variable,
+      monoFont.variable,
+    )}
+    lang="en-US"
+  >
     <body>{children}</body>
   </html>
 );

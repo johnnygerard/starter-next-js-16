@@ -7,12 +7,6 @@
   }
 }
 
-@media screen and (update: fast) and (prefers-reduced-motion: no-preference) {
-  :root {
-    @apply scroll-smooth;
-  }
-}
-
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
