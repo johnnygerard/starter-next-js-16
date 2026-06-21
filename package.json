@@ -39,6 +39,8 @@
     "deploy:preview": "vercel pull --environment=preview && vercel build && vercel deploy --prebuilt",
     "deploy:production": "vercel pull --environment=production && vercel build --prod && vercel deploy --prebuilt --prod",
     "dev": "next dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint",
     "start": "serve out -l 4000"
   },
