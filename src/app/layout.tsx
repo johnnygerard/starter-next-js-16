@@ -46,6 +46,7 @@ const RootLayout: FC<Props> = ({ children }) => (
       monoFont.variable,
     )}
     lang="en-US"
+    data-scroll-behavior="smooth"
   >
     <body>{children}</body>
   </html>
