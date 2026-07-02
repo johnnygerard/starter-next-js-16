@@ -1,8 +1,8 @@
-import "@/styles/global.css";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { FC, ReactNode } from "react";
+import "~/styles/global.css";
 
 const sansFont = Geist({
   variable: "--font-geist-sans",
